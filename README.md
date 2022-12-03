@@ -1,4 +1,4 @@
-# advent_of_code_2022
+# From https://adventofcode.com/2022
 
 - Day 01:
     - split text on line breaks
@@ -17,15 +17,31 @@
     - added second loop to recalculate string values based on instructions for pt2    
 
 - Day 03
+    - Added array of alphabet characters (didn't want to figure out how to generate the array)
+    - split input on line breaks
     - pt1
-        - Added array of alphabet characters (didn't want to figure out how to generate the array)
-        - split input on line breaks
         - loop through each pack
             - loop through letters in first half of pack string
                 - loop through letters in second half to compare letter from first half
                 - break after we find the match
             - break after we find the match
-        - loop throguh alpha array to din matching character
-        - add characters index position + 1 to the sum
+        - loop throguh alpha array to find matching character
+        - add character's index position + 1 to the sum
     - pt2
-        
+        - loop through each pack
+            - if it's the last in the group (counter = 2), reset the counter and move on
+            - if it's the second in the group, add one to the counter and move on
+            - if it's the first in the group
+                - add one to the counter
+                - identify the rest of the packs in the group
+                - loop through each letter in the first pack
+                    - break out of the loop if we've already found our letter
+                    - loop through the letters in the second pack
+                    - if this letter matches the letter from the first pack
+                        - loop through letters in the last pack
+                        - if this letter matches the letter from the previous 2 packs
+                            - save our found letter
+                            - break out of this loop
+                    - break after we've found our letter    
+                - loop throguh alpha array to find matching character
+                - add character's index position + 1 to the sum
