@@ -9,4 +9,8 @@
         - add running total to current index position
     - sort the array of totals, then add together the values from the last 3 index positions
 
-    
+- Day 02
+    - split input on line breaks
+    - set number values for each possible sting (only 9 combos, seemed quickest)
+    - loop through input, add total of each line to total variable
+    - added second loop to recalculate string values based on instructions for pt2    
