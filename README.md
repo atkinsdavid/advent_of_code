@@ -1,22 +1,22 @@
 # From https://adventofcode.com/2022
 
+<summary>
+    Day 01
+</summary>
 <details>
-    <summary>
-        - Day 01
-    </summary>
-        - split text on line breaks
-        - inside loop:
-            - multiplied value to ensure it was numeric
-            - used counters to track current index position in array of totals, and reset if we hit a 0 value
-            - add value to running total inside loop
-            - add running total to current index position
-        - sort the array of totals, get the last one for pt 1
-        - add together the values from the last 3 index positions
+    - split input on line breaks
+    - inside loop:
+        - multiplied value to ensure it was numeric
+        - used counters to track current index position in array of totals, and reset if we hit a 0 value
+        - add value to running total inside loop
+        - add running total to current index position
+    - sort the array of totals, get the last one for pt 1
+    - add together the values from the last 3 index positions
 </details>
 
 <details>
     <summary>
-        - Day 02
+        Day 02
     </summary>
         - split input on line breaks
         - set number values for each possible sting (only 9 combos, seemed quickest)
@@ -26,7 +26,7 @@
 
 <details>
     <summary>
-        - Day 03
+        Day 03
     </summary>
         - Added array of alphabet characters (didn't want to figure out how to generate the array)
         - split input on line breaks
@@ -58,13 +58,19 @@
                     - add character's index position + 1 to the sum
 </details>
 
+<details>
+    <summary>
+        Day 04
+    </summary>
+        - 
+</details>
 
 
 <!--New Day template
 
 <details>
     <summary>
-        - Day ##
+        Day ##
     </summary>
         - 
 </details>
