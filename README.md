@@ -132,6 +132,21 @@
         </ul>
 </details>
 
+<details>
+    <summary>
+        Day 06
+    </summary>
+        <ul>
+            <li>create array of input characters</li>
+            <li>loop through each character</li>
+                <ul>
+                    <li>assign variables for the 4 char. group</li>
+                    <li>write out the worlds longest conditional to see if any of the charaters match</li>
+                    <li>if no match found, set marker to index position + number of unique characters being searched</li>
+                </ul>
+        </ul>
+</details>
+
 <!--New Day template
 
 <details>
