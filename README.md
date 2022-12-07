@@ -1,17 +1,21 @@
 # From https://adventofcode.com/2022
 
-<summary>
-    Day 01
-</summary>
 <details>
-    - split input on line breaks
-    - inside loop:
-        - multiplied value to ensure it was numeric
-        - used counters to track current index position in array of totals, and reset if we hit a 0 value
-        - add value to running total inside loop
-        - add running total to current index position
-    - sort the array of totals, get the last one for pt 1
-    - add together the values from the last 3 index positions
+    <summary>
+        Day 01
+    </summary>
+    <ul>
+        <li>split input on line breaks</li>
+        <li>inside loop:</li>
+            <ul>
+                <li>multiplied value to ensure it was numeric</li>
+                <li>used counters to track current index position in array of totals, and reset if we hit a 0 value</li>
+                <li>add value to running total inside loop</li>
+                <li>add running total to current index position</li>
+            </ul>
+        <li>sort the array of totals, get the last one for pt 1</li>
+        <li>add together the values from the last 3 index positions</li>
+    <ul>
 </details>
 
 <details>
@@ -62,7 +66,9 @@
     <summary>
         Day 04
     </summary>
-        - 
+        <ul>
+            <li></li>
+        </ul>
 </details>
 
 
@@ -72,7 +78,9 @@
     <summary>
         Day ##
     </summary>
-        - 
+        <ul>
+            <li></li>
+        </ul>
 </details>
 
 -->
