@@ -2,7 +2,7 @@
 
 <details>
     <summary>
-        Day 01
+        ##Day 01
     </summary>
     <ul>
         <li>split input on line breaks</li>
@@ -20,51 +20,73 @@
 
 <details>
     <summary>
-        Day 02
+        ##Day 02
     </summary>
-        - split input on line breaks
-        - set number values for each possible sting (only 9 combos, seemed quickest)
-        - loop through input, add total of each line to total variable
-        - added second loop to recalculate string values based on instructions for pt2    
+        <ul>
+            <li>split input on line breaks</li>
+            <li>set number values for each possible sting (only 9 combos, seemed quickest)</li>
+            <li>loop through input, add total of each line to total variable</li>
+            <li>added second loop to recalculate string values based on instructions for pt2</li>
+        </ul>
 </details>
 
 <details>
     <summary>
-        Day 03
+        ##Day 03
     </summary>
-        - Added array of alphabet characters (didn't want to figure out how to generate the array)
-        - split input on line breaks
-        - pt1
-            - loop through each pack
-                - loop through letters in first half of pack string
-                    - loop through letters in second half to compare letter from first half
-                    - break after we find the match
-                - break after we find the match
-            - loop throguh alpha array to find matching character
-            - add character's index position + 1 to the sum
-        - pt2
-            - loop through each pack
-                - if it's the last in the group (counter = 2), reset the counter and move on
-                - if it's the second in the group, add one to the counter and move on
-                - if it's the first in the group
-                    - add one to the counter
-                    - identify the rest of the packs in the group
-                    - loop through each letter in the first pack
-                        - break out of the loop if we've already found our letter
-                        - loop through the letters in the second pack
-                        - if this letter matches the letter from the first pack
-                            - loop through letters in the last pack
-                            - if this letter matches the letter from the previous 2 packs
-                                - save our found letter
-                                - break out of this loop
-                        - break after we've found our letter    
-                    - loop throguh alpha array to find matching character
-                    - add character's index position + 1 to the sum
+        <ul>
+            <li>Added array of alphabet characters (didn't want to figure out how to generate the array)</li>
+            <li>split input on line breaks</li>
+            <li>pt1</li>
+                <ul>
+                    <li>loop through each pack</li>
+                        <ul>
+                            <li>loop through letters in first half of pack string</li>
+                                <ul>
+                                    <li>loop through letters in second half to compare letter from first half</li>
+                                    <li>break after we find the match</li>
+                                </ul>
+                            <li>break after we find the match</li>
+                        </ul>
+                    <li>loop throguh alpha array to find matching character</li>
+                    <li>add character's index position + 1 to the sum</li>
+                </ul>
+            <li>pt2</li>
+                <ul>
+                    <li>loop through each pack</li>
+                        <ul>
+                            <li>if it's the last in the group (counter = 2), reset the counter and move on</li>
+                            <li>if it's the second in the group, add one to the counter and move on</li>
+                            <li>if it's the first in the group</li>
+                                <ul>
+                                    <li>add one to the counter</li>
+                                    <li>identify the rest of the packs in the group</li>
+                                    <li>loop through each letter in the first pack</li>
+                                        <ul>
+                                            <li>break out of the loop if we've already found our letter</li>
+                                            <li>loop through the letters in the second pack</li>
+                                            <li>if this letter matches the letter from the first pack</li>
+                                                <ul>
+                                                    <li>loop through letters in the last pack</li>
+                                                    <li>if this letter matches the letter from the previous 2 packs</li>
+                                                        <ul>
+                                                            <li>save our found letter</li>
+                                                            <li>break out of this loop</li>
+                                                        </ul>
+                                                    </ul>
+                                            <li>break after we've found our letter    </li>
+                                        </ul>
+                                    <li>loop throguh alpha array to find matching character</li>
+                                    <li>add character's index position + 1 to the sum</li>
+                                </ul>
+                        </ul>
+                </ul>
+        </ul>
 </details>
 
 <details>
     <summary>
-        Day 04
+        ##Day 04
     </summary>
         <ul>
             <li></li>
@@ -76,7 +98,7 @@
 
 <details>
     <summary>
-        Day ##
+        ##Day __
     </summary>
         <ul>
             <li></li>
