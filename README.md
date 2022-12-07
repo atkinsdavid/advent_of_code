@@ -114,6 +114,23 @@
         </ul>
 </details>
 
+<details>
+    <summary>
+        Day 05
+    </summary>
+        <ul>
+            <li>manually created array of objects that matched my input</li>
+            <li>including a blank object at index 0 so that the index number for each stack correcsponded with the actual stack number</li>
+            <li>split input in to a single line per move</li>
+                <ul>
+                    <li>create empty array to hold the numbers from the line</li>
+                    <li>alternate between removing non-numeric characters from the begining of the string and filling number array with the numbers</li>
+                    <li>assign variable for source, destination, and # of objects to move based on the numbers array</li>
+                    <li>PT 1: loop through the old stack the appropriate number of times, removing the last object and adding it to the new stack</li>
+                    <li>PT 2: remove the total number of objects from source and add to destination</li>
+                </ul>
+        </ul>
+</details>
 
 <!--New Day template
 

@@ -12,9 +12,25 @@ let eight   = ["Q","V","W","S"];
 let nine    = ["W","H","L","M","T","D","N","C"];
 
 let stacksArray = [blank,one,two,three,four,five,six,seven,eight,nine]
+console.log(stacksArray);
 
 let input = document.querySelector('pre');
 let movesArray = input.textContent;
+
+
+
+
+let blank   = [];
+let one     = ["Z","N"];
+let two     = ["M","C","D"];
+let three   = ["P"];
+
+let stacksArray = [blank,one,two,three]
+console.log(stacksArray);
+
+let movesArray = "\nmove 1 from 2 to 1\nmove 3 from 1 to 3\nmove 2 from 2 to 1\nmove 1 from 1 to 2";
+
+
 movesArray = movesArray.substring(movesArray.indexOf("\nmove") + 1);
 movesArray = movesArray.split(/\n/g);
 movesArray.forEach(line =>{
@@ -31,13 +47,13 @@ movesArray.forEach(line =>{
     let numToMove = lineArray[0];
     let oldStack = stacksArray[oldNum];
     let newStack = stacksArray[newNum];
-    let stuffToMove = oldStack.splice(oldStack.length - numToMove);
-    console.log(stuffToMove);
     console.log(newStack);
-    stuffToMove.forEach(letter=>{
-        newStack.push(letter);
-    });
-    console.log(newStack);
-});
+    for (let a = 0; a < numToMove; a++) {
+        let moved = oldStack.splice(oldStack.length - 1);
+        console.log(moved[0] + ", " + typeof moved[0]);
+        newStack.push(moved[0]);
+    }
 
-console.log(stacksArray);
+    console.log(newStack);
+    console.log(stacksArray);
+});
