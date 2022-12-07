@@ -1,6 +1,6 @@
 # From https://adventofcode.com/2022
 
-<details><summary>- Day 01:</summary>
+<details><summary>- Day 01</summary>
     - split text on line breaks
     - inside loop:
         - multiplied value to ensure it was numeric
