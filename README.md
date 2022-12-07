@@ -2,7 +2,7 @@
 
 <details>
     <summary>
-        ##Day 01
+        Day 01
     </summary>
     <ul>
         <li>split input on line breaks</li>
@@ -20,7 +20,7 @@
 
 <details>
     <summary>
-        ##Day 02
+        Day 02
     </summary>
         <ul>
             <li>split input on line breaks</li>
@@ -32,7 +32,7 @@
 
 <details>
     <summary>
-        ##Day 03
+        Day 03
     </summary>
         <ul>
             <li>Added array of alphabet characters (didn't want to figure out how to generate the array)</li>
@@ -86,10 +86,31 @@
 
 <details>
     <summary>
-        ##Day 04
+        Day 04
     </summary>
         <ul>
-            <li></li>
+            <li>split input on line breaks</li>
+            <li>for each line, split it in to and array of two number ranges</li>
+                <ul>
+                    <li>for each pair in the array, assign the number before and after the hyphen to a new array with all 4 numbers</li>
+                    <li>make sure they're numbers by multiplying by 1</li>
+                </ul>
+            <li>assing each value of the new array to variables for readability</li>
+            <li>using those variables in a for loop, create an array representing each elf containing every number in the range</li>
+            <li>loop through each number for the first array in the pair, and see if it's contained in the second array</li>
+                <ul>
+                    <li>if we find a number not in the array, set tracker to 0 and break the loop</li>
+                    <li>if all the first array's numbers are in the second array, increment global counter and move to the next line. otherwise:</li>
+                        <ul>
+                            <li>loop through each number in 2nd array, to see if it's in the first</li>
+                            <li>if all numbers are there, increment global counter. Otherwise we move to the next iteration of the outer loop</li>
+                        </ul>
+                </ul>
+            <li>for part 2, using the same pair of arrays before</li>
+                <ul>
+                    <li>see if any number for first array is in the second, and incrememnt counter if so</li>
+                    <li>if not, double check the second array to see if any of it's numbers are contained in the first, and increment if so</li>
+                </ul>
         </ul>
 </details>
 
@@ -98,7 +119,7 @@
 
 <details>
     <summary>
-        ##Day __
+        Day ##
     </summary>
         <ul>
             <li></li>
