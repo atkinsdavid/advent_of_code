@@ -19,18 +19,46 @@ let movesArray = input.textContent;
 
 
 
+// // TEST INPUT
+// let blank   = [];
+// let one     = ["Z","N"];
+// let two     = ["M","C","D"];
+// let three   = ["P"];
 
-let blank   = [];
-let one     = ["Z","N"];
-let two     = ["M","C","D"];
-let three   = ["P"];
+// let stacksArray = [blank,one,two,three]
+// console.log(stacksArray);
 
-let stacksArray = [blank,one,two,three]
-console.log(stacksArray);
+// let movesArray = "\nmove 1 from 2 to 1\nmove 3 from 1 to 3\nmove 2 from 2 to 1\nmove 1 from 1 to 2";
 
-let movesArray = "\nmove 1 from 2 to 1\nmove 3 from 1 to 3\nmove 2 from 2 to 1\nmove 1 from 1 to 2";
+// // PT 1
+// movesArray = movesArray.substring(movesArray.indexOf("\nmove") + 1);
+// movesArray = movesArray.split(/\n/g);
+// movesArray.forEach(line =>{
+//     let lineArray = [];
+//     line = line.substring(line.indexOf(" ") + 1);
+//     lineArray[0] = Number(line.match(/[0-9].*(?= from)/g));
+//     line = line.substring(line.indexOf("m") + 2);
+//     lineArray[1] = Number(line.match(/[0-9].*(?= to)/g));
+//     line = line.substring(line.indexOf("o") + 2);
+//     lineArray[2] = Number(line);
+//     console.log(lineArray);
+//     let oldNum = lineArray[1];
+//     let newNum = lineArray[2];
+//     let numToMove = lineArray[0];
+//     let oldStack = stacksArray[oldNum];
+//     let newStack = stacksArray[newNum];
+//     console.log(newStack);
+//     for (let a = 0; a < numToMove; a++) {
+//         let moved = oldStack.splice(oldStack.length - 1);
+//         console.log(moved[0] + ", " + typeof moved[0]);
+//         newStack.push(moved[0]);
+//     }
 
+//     console.log(newStack);
+//     console.log(stacksArray);
+// });
 
+// PT 2
 movesArray = movesArray.substring(movesArray.indexOf("\nmove") + 1);
 movesArray = movesArray.split(/\n/g);
 movesArray.forEach(line =>{
@@ -47,13 +75,12 @@ movesArray.forEach(line =>{
     let numToMove = lineArray[0];
     let oldStack = stacksArray[oldNum];
     let newStack = stacksArray[newNum];
+    let stuffToMove = oldStack.splice(oldStack.length - numToMove);
+    console.log(stuffToMove);
     console.log(newStack);
-    for (let a = 0; a < numToMove; a++) {
-        let moved = oldStack.splice(oldStack.length - 1);
-        console.log(moved[0] + ", " + typeof moved[0]);
-        newStack.push(moved[0]);
-    }
-
+    stuffToMove.forEach(letter=>{
+        newStack.push(letter);
+    });
     console.log(newStack);
     console.log(stacksArray);
 });
